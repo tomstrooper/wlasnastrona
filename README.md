@@ -1,0 +1,2 @@
+# wlasnastrona
+ projekt wlasnej strony
