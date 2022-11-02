@@ -1,0 +1,23 @@
+.zdjecia{
+    display: flex;
+    gap: 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.kwadrat{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+}
+.kwadrat:hover{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+}
+.probna{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
