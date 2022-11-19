@@ -4,24 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona testowa</title>
-
+    <title>Panoramix drinks</title>
+<!--linkowanie do skryptu css-->
     <link rel="stylesheet" href="glownastronastyle.css">
 </head>
 <body>
-<div class="zdjecia">
-    <div class="kwadrat">zdjecie1</div>
-    <div class="kwadrat">zdjecie2</div>
-    <div class="kwadrat">zdjecie3</div>
-    <div class="kwadrat">zdjecie4</div>
+
+<!--naglowek glowny-->  
+<div class="naglowek">
+        <div class="naglowekglowna">
+            <div clss="logo"><a href="#startowelogo"><img class="logozdjecie" src="/image/logo.jpg"></a></div>
+            <div class="naglowekgap"></div>
+            <a class="linki" href="#idoferta">Oferta</a>
+            <a class="linki" href="#idonas">O nas</a>
+            <a class="linki" href="#idgaleria">Galeria</a>
+            <a class="linki" href="#idkontakt">Kontakt</a>   
+        </div>
+
 </div>
-<div class="zdjecia">
+
+<!--przestrzen zrobiona na minus zeby usunac poczatkowa przestrzen gap2-->
+<div class="gapstart"></div>
+
+<!--logo startowe-->    
+
+<div id="startowelogo">
+    <div class="gap2"></div>
+    </br>
+    </br>
+    <div class="glowna">
+        <div class="startowe">
+            <img class="startowelogo" src="/image/logo.jpg">
+            <div>tekst opisu starowego afafa afafasfa dfafasf asfasfasf adfas sdf sd fsdf sd fsd fsd fsd</div>
+        </div>
+    </div>
+</div>
+
+<!--oferta-->
+<div class="glowna">
+    <div id="idoferta">
+        <div class="gap2"></div>
+        <div>Oferta</div>
+    </div>
+</div>
+</br>
+<div class="glowna">
+    <div class="oferta">
+        <button class="button" onclick="previmage()">&#8249</button>
+        <img class="ofertazdjecie" src="/galery/e46.jpg" id="zdjecieoferty">
+        <button class="button" onclick="nextimage()">&#8250</button>
+    </div>
+</div>
+
+<div class="ofertapasek">
+    <button class="miniaturabutton" onclick="oferta1()"><img class="miniaturazdjecie" src="/image/logo.jpg"><div class="tooltip">drinki</div></button>
+    <button class="miniaturabutton" onclick="oferta2()"><img class="miniaturazdjecie" src="/image/logo.jpg"><div class="tooltip">standard karta1</div></button>
+    <button class="miniaturabutton" onclick="oferta3()"><img class="miniaturazdjecie" src="/image/logo.jpg"><div class="tooltip">standard karta2</div></button>
+</div>
+
+
+
+<!--O nas-->
+<div class="glowna">
+    <div id="idonas">
+        <div class="gap2"></div>
+        <div>O nas</div>
+        </br>
+        <div class="onas">
+            <img class="zdjeciaonas" src="/galery/zdjeciemy.jpg">
+            <div>krotki opis o nas adfakjfgbajf afkonafoanofan adfoafnakf sdpfgadlkgnmsdlkg sdpgmsdgmsdlmsdg asfa afas asfasf asfa afasf asfa asfasf asfas afaf sdpgsdgmsdlkgnsd spdgmsdmgsdlkgm</div>
+        </div>
+    </div>
+</div>
+
+
+<!--galeria ze zdjeciami--> 
+<div class="glowna">
+    <div id="idgaleria">
+        <div class="gap2"></div>
+        <div>Galeria</div>
+        <div class="gap"></div>
+    </div> 
+</div> 
+<div class="glowna">
+    <img class="kwadrat" src="/galery/galery1.jpg">
+    <img class="kwadrat" src="/galery/galery2.jpg">
+    <img class="kwadrat" src="/galery/galery3.jpg">
+    <img class="kwadrat" src="/galery/galery4.jpg">
+</div>
+<div class="gap"></div>
+<div class="glowna">
     <div class="kwadrat">zdjecie1</div>
     <div class="kwadrat">zdjecie2</div>
     <div class="kwadrat">zdjecie3</div>
     <div class="kwadrat">zdjecie4</div>
 </div>
 
+<!--kontakt-->
+<div class="gap2"></div>
+<div class="tlo">       
+    <div class="glowna">
+        <div id="idkontakt">
+            <div class="gap2"></div>
+            <div>Kontakt</div>
+            </br>
+            <div>e-main: panoramix.drinks@gmail.com</div>
+            <div>tel: 725 102 376</div>
+            </br>
+            <a href="https://www.instagram.com/panoramix_drinks/" target="_blank">
+                <img class="socialmediaimage" src="image/instagram.png">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100026822812537" target="_blank">
+                <img class="socialmediaimage" src="image/facebook.jpg">
+            </a>
+            <div class="end"></div>
+        </div>
+    </div>      
+</div>
+
+
+<!--linkowanie do skryptu java-->
     <script src="glowna.js"></script>
 </body>
 </html>
