@@ -7,6 +7,7 @@
     <title>Panoramix drinks</title>
 <!--linkowanie do skryptu css-->
     <link rel="stylesheet" href="glownastronastyle.css">
+    <script defer src="glowna.js"></script>
 </head>
 <body>
 
@@ -16,7 +17,7 @@
             <div clss="logo"><a href="#startowelogo"><img class="logozdjecie" src="/image/logo.jpg"></a></div>
             <div class="naglowekgap"></div>
             <a class="linki" href="#idoferta">Oferta</a>
-            <a class="linki" href="#idonas">O nas</a>
+            <a class="linki" href="#idonas">O_nas</a>
             <a class="linki" href="#idgaleria">Galeria</a>
             <a class="linki" href="#idkontakt">Kontakt</a>   
         </div>
@@ -33,10 +34,9 @@
     </br>
     </br>
     <div class="glowna">
-        <div class="startowe">
+      
             <img class="startowelogo" src="/image/logo.jpg">
-            <div>tekst opisu starowego afafa afafasfa dfafasf asfasfasf adfas sdf sd fsdf sd fsd fsd fsd</div>
-        </div>
+        
     </div>
 </div>
 
@@ -87,18 +87,24 @@
     </div> 
 </div> 
 <div class="glowna">
-    <img class="kwadrat" src="/galery/galery1.jpg">
+    <img class="kwadrat" src="/galery/galery1.jpg" onclick="galery('/galery/galery1.jpg')">
+    <img class="kwadrat" src="/galery/galery2.jpg" onclick="galery('/galery/galery2.jpg')"> 
+    <img class="kwadrat" src="/galery/galery3.jpg" onclick="galery('/galery/galery3.jpg')">
+    <img class="kwadrat" src="/galery/galery4.jpg" onclick="galery('/galery/galery4.jpg')">
+</div>
+<div class="gap"></div>
+<div class="glowna">
+    <img class="kwadrat" src="/galery/galery1.jpg" onclick="galery()">
     <img class="kwadrat" src="/galery/galery2.jpg">
     <img class="kwadrat" src="/galery/galery3.jpg">
     <img class="kwadrat" src="/galery/galery4.jpg">
 </div>
-<div class="gap"></div>
-<div class="glowna">
-    <div class="kwadrat">zdjecie1</div>
-    <div class="kwadrat">zdjecie2</div>
-    <div class="kwadrat">zdjecie3</div>
-    <div class="kwadrat">zdjecie4</div>
+
+<!--powiekszenie zdjecia z galerii po kliknieciu w obrazek, nieaktywne od poczatku a po kliknieciu na to znika-->
+<div class="lightbox" id="lightbox" onclick="galeryclose()">
+    <img class="powiekszonefoto" id="powiekszonefoto" src="/galery/galery2.jpg">
 </div>
+
 
 <!--kontakt-->
 <div class="gap2"></div>
@@ -124,6 +130,6 @@
 
 
 <!--linkowanie do skryptu java-->
-    <script src="glowna.js"></script>
+
 </body>
 </html>

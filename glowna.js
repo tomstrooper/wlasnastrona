@@ -1,3 +1,6 @@
+
+
+
 let ktorezdjecie = 0;
 
 var galeria = [];
@@ -54,4 +57,14 @@ function oferta3()
 {
     document.getElementById("zdjecieoferty").src = galeria[2].src;
     let ktorezdjecie = 2;
+}
+
+function galery(a)
+{
+    console.log(a);
+    document.getElementById("lightbox").style='display:flex';
+    document.getElementById("powiekszonefoto").src = a;
+}
+function galeryclose(){
+    document.getElementById("lightbox").style='display:none';
 }
